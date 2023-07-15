@@ -12,6 +12,12 @@ export default {
         red: "hsl(0, 100%, 67%)",
       },
     },
+    fontSize: {
+      "fluid-input": "clamp(1rem, 0.8rem + 1vw, 2rem);",
+      "fluid-2": "clamp(2.5rem, 1.7rem + 4vw, 6.5rem);",
+      "fluid-label":
+        "clamp(0.7rem, 0.6649999999999999rem + 0.175vw, 0.875rem);",
+    },
   },
   plugins: [],
 };
