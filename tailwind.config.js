@@ -17,6 +17,7 @@ export default {
       "fluid-2": "clamp(2.5rem, 1.7rem + 4vw, 6.5rem);",
       "fluid-label":
         "clamp(0.7rem, 0.6649999999999999rem + 0.175vw, 0.875rem);",
+      "fluid-h": "clamp(1.5rem, 1.3rem + 1vw, 2.5rem);",
     },
   },
   plugins: [],
