@@ -127,7 +127,7 @@ function App() {
   };
 
   return (
-    <mzin className="flex justify-center items-center">
+    <main className="flex justify-center items-center">
       <div className="bg-white sm:p-14 m-4 p-4 rounded-[1rem] md:rounded-br-[12.5rem] rounded-br-[5rem]     min-[600px]:max-w-[unset] max-w-xs">
         <h1 className="text-[1.5rem] text-fluid-h mb-8">
           Enter your Date of Birth 🎂
@@ -245,7 +245,7 @@ function App() {
           </p>
         </div>
       </div>
-    </mzin>
+    </main>
   );
 }
 
