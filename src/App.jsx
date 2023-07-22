@@ -13,9 +13,6 @@ function App() {
   const [isValidYear, setIsValidYear] = useState(null);
   const birthDate = `${year}-${month}-${day}`;
   const currentDateObj = new Date();
-  function isLeapYear(year) {
-    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
-  }
 
   function calculateAge(birthDate) {
     const birthDateObj = new Date(birthDate);
@@ -37,25 +34,6 @@ function App() {
     if (months < 0) {
       years--;
       months += 12;
-    }
-
-    const birthYear = birthDateObj.getFullYear();
-    const birthMonth = birthDateObj.getMonth() + 1;
-    const birthDay = birthDateObj.getDate();
-
-    // Adjust for leap years
-    for (let year = birthYear; year < currentDateObj.getFullYear(); year++) {
-      if (isLeapYear(year)) {
-        days++;
-      }
-    }
-
-    if (
-      isLeapYear(currentDateObj.getFullYear()) &&
-      birthMonth <= 2 &&
-      currentDateObj.getMonth() >= 2
-    ) {
-      days++;
     }
 
     return { years, months, days };
